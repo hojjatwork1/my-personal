@@ -1,0 +1,634 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+.continer {
+    width: 100%;
+    height: 100vh;
+}
+
+.top {
+    width: 100%;
+    height: 65%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* قسمت چپ */
+.left {
+    width: 35%;
+    height: 100%;
+}
+
+.left-top {
+    width: 500px;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.hojjat {
+    font-weight: bolder;
+    font-size: 70px;
+    color: #5a189a;
+}
+
+.name {
+    animation: move 3s ease-in-out alternate;
+}
+
+@keyframes move {
+    0% {
+        opacity: 0;
+        margin: 60px 0;
+    }
+}
+
+.surname {
+    font-weight: 500;
+    font-size: 50px;
+    color: #5a189a;
+    display: block;
+    line-height: 0.9;
+}
+
+.job {
+    font-size: 15px;
+    display: block;
+    color: #212529;
+}
+
+.left-bottom {
+    width: 100%;
+    height: 50%;
+}
+
+.about-section {
+    margin-top: 20px;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    margin-top: 15%;
+}
+
+.icon-user {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.title {
+    font-size: 2em;
+    color: #5a189a;
+    font-weight: 700;
+}
+
+.description {
+    margin-top: 10px;
+    color: #2f3e46cc;
+}
+
+.academic {
+    width: 90%;
+    margin-top: 5%;
+    height: 100%;
+}
+
+.aca-ul {
+    margin: 15px 0;
+    color: #5a189a;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+.history {
+    font-size: 15px;
+    margin-left: 5%;
+    border-bottom: 1px solid rgba(102, 97, 97, 0.534);
+}
+
+/* بخش وسط */
+.center {
+    width: 30%;
+    height: 92vh;
+    background-color: #5a189a;
+    border-radius: 0 0 30px 30px;
+}
+
+.profile-place {
+    width: 100%;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.profile-back {
+    background-color: #caf0f82c;
+    width: 250px;
+    height: 250px;
+    border-radius: 55% 45% 73% 27% / 31% 70% 30% 69%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.profile-pic {
+    width: 210px;
+    border-radius: 50%;
+}
+
+.center-content {
+    margin-top: 3%;
+    transform: translateX(-4%);
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.descriptionn {
+    color: #edf2f4;
+    margin-top: 5%;
+    font-size: 19px;
+    line-height: 2;
+}
+
+.bio-place {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.center-title {
+    color: #edf2f4;
+}
+
+/* بخش راست */
+.right {
+    width: 35%;
+    height: 50%;
+}
+
+.contact {
+    text-align: center;
+    width: 100%;
+    height: 12%;
+    margin-top: 10%;
+}
+
+.tooltip {
+    width: 100%;
+    height: 50%;
+    margin-top: 7%;
+}
+
+.right-bottom {
+    width: 100%;
+    height: 50vh;
+}
+
+.title-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-twins {
+    margin-top: 40px;
+    width: 100%;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.skill-name {
+    width: 30%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.skills {
+    color: #5a189a;
+    margin-bottom: 5.3vh;
+}
+
+.skill-board {
+    width: 70%;
+    height: 100%;
+}
+
+.white-space {
+    width: 90%;
+    border-radius: 12px;
+    height: 12px;
+    background-color: rgba(0, 0, 0, 0.26);
+    margin-top: 2vh;
+    margin-bottom: 8vh;
+}
+
+.progress {
+    width: 90%;
+    justify-content: end;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-image: linear-gradient(to right, #ff6449, #a414b8);
+    border-radius: 12px;
+    animation: harakat 3s ease-in-out alternate;
+}
+
+@keyframes harakat {
+    0% {
+        width: 0;
+        opacity: 0.2;
+    }
+}
+
+.derece {
+    margin-bottom: 60px;
+    background-image: linear-gradient(to right, #ff6449, #a414b8);
+    border-radius: 5px;
+    margin-right: -5%;
+    padding: 0 4px;
+    position: relative;
+    color: #fff;
+}
+
+.derece::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 0;
+    right: 0;
+    bottom: -20%;
+    transform: rotate(45deg);
+    margin: 0 auto;
+    z-index: -1;
+    background-image: linear-gradient(to right, #ff6449, #a414b8);
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+
+@media (max-width: 1200px) {
+
+    .left,
+    .center,
+    .right {
+        width: 100%;
+        height: auto;
+    }
+
+    .top {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .name,
+    .surname {
+        font-size: 50px;
+    }
+
+    .center {
+        height: auto;
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .left,
+    .center,
+    .right {
+        width: 100%;
+        height: auto;
+    }
+
+    .name,
+    .surname {
+        font-size: 40px;
+    }
+
+    .profile-pic {
+        width: 180px;
+    }
+
+    .top {
+        flex-direction: column;
+    }
+
+    .descriptionn {
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .hojjat,
+    .surname {
+        font-size: 30px;
+    }
+
+    .profile-pic {
+        width: 150px;
+    }
+
+    .center {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 1.2em;
+    }
+
+    .progress {
+        height: 8px;
+    }
+
+    .derece {
+        font-size: 12px;
+    }
+}
+
+/* وارد بخش دوم شدیم /////////////////////////////////////////////////////////////////////////// */
+
+
+.continer2 {
+    width: 100%;
+    height: 100vh;
+    margin-top: 4%;
+}
+
+.top2 {
+    width: 100%;
+    height: 25%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title2 {
+    text-align: center;
+    font-weight: 800;
+    color: #212529;
+    margin-left: 1vw;
+    font-size: 3.4em;
+}
+
+.bottom2 {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left2,
+.right2 {
+    width: 50%;
+    height: 100%;
+}
+
+.right2-top,
+.right2-bottom {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+}
+
+.box1,
+.box2 {
+    padding: 24px;
+    width: 36%;
+    border-radius: 8px;
+    background: #e0e0e0;
+    box-shadow: 15px 15px 30px #9f9f9f, -15px -15px 30px #ffffff;
+}
+
+hr {
+    width: 26%;
+}
+
+#year {
+    color: #5a189a;
+    font-weight: 900;
+    font-size: 3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#year2 {
+    font-weight: 400;
+}
+
+.mid-left {
+    width: 50%;
+    height: 90%;
+}
+
+#mid-title {
+    color: #5a189a;
+    font-size: 2.1em;
+}
+
+#info {
+    font-weight: 300;
+    margin-top: 1.4rem;
+}
+
+.info {
+    font-weight: 600;
+}
+
+.left-continer {
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mid-title2 {
+    visibility: hidden;
+}
+
+@media (max-width: 768px) {
+    .bottom2 {
+        flex-direction: column;
+
+        height: auto;
+    }
+
+    .left2,
+    .right2 {
+        width: 100%;
+
+        height: auto;
+    }
+
+    .title2 {
+        font-size: 2em;
+
+    }
+
+    .box1,
+    .box2 {
+        width: 80%;
+
+    }
+
+    #year {
+        font-size: 2em;
+
+    }
+
+    #mid-title {
+        font-size: 2em;
+        width: 100%;
+    }
+
+    .box1,
+    .box2 {
+        margin-top: 20px;
+    }
+
+    .top2 {
+        margin-top: 30px;
+    }
+
+    #mid-title {
+        display: none;
+    }
+
+    #mid-title2 {
+        display: none;
+    }
+
+    .info,
+    #info {
+        font-size: 1em;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .title2 {
+        font-size: 2.5em;
+
+    }
+
+    .box1,
+    .box2 {
+        width: 50%;
+
+    }
+
+    #year {
+        font-size: 2.5em;
+    }
+}
+
+/* وارد بخش سوم شدیم //////////////////////////////////////////////////// */
+/* استایل کلی صفحه */
+
+
+.containerr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2rem;
+    height: 100vh;
+}
+
+.card {
+    background: #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 15px 15px 30px #9f9f9f, -15px -15px 30px #ffffff;
+    padding: 1.5rem;
+    text-align: center;
+    width: 20%;
+    height: 48%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.icon img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    font-size: 1.3rem;
+    color: #333333;
+    margin-bottom: 0.5rem;
+}
+
+
+.card p {
+    font-size: 93%;
+    color: #666666;
+    line-height: 1.6;
+}
+
+
+@media (max-width: 1024px) {
+    .card {
+        width: 30%;
+        height: 360px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 90%;
+        height: 360px;
+
+    }
+
+    .card p {
+        font-size: 20px;
+    }
+
+    .containerr {
+        margin: 1rem;
+    }
+}
